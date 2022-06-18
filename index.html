@@ -153,7 +153,7 @@
           guests.forEach(guest => guests_html += `<li>${guest.name} | ${guest.surname} | ${guest.regime}</li>`)
           guests_html += "</ul>"
 
-          emailjs.send("service_qfgpgr5", "template_doea21g", {
+          emailjs.send("service_qfgpgr5","template_doea21g", {
               name: guests[guests.length - 1].name,
               surname: guests[guests.length - 1].surname,
               guests: guests_html,
